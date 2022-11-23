@@ -9,6 +9,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: solid 1px;
 }
 
 nav ul {
@@ -32,25 +33,34 @@ nav li {
 
 .column-2 {
     width: 300px;
+    text-align: center;
 }
 
-.column-2 h2 {
-    text-align: center;
+.column-2 p {
+    text-align: left;
+}
+
+.column-2 img {
+    max-width: 300px;
+    border-radius: 20px;
 }
 
 .skills {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .skills ul {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     list-style: none;
+    padding: 0;
 }
 
 .skills li {
-    padding: 1rem;
+    padding: 0 1rem 0 1rem;
     font-size: 2rem;
 }
 
