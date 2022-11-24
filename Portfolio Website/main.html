@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="html">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Portfolio Website">
@@ -7,7 +7,6 @@
     <meta name="author" content="Petter-Nikolai Kristoffersen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/f2ebdb1586.js" crossorigin="anonymous"></script>
-    <script src="slideshow.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>My Portfolio</title>
 </head>
@@ -22,19 +21,24 @@
                 <li>Contact</li>
             </ul>
         </nav>
+        <div class="darkmode">
+            <p>Dark Mode</p>
+            <i id="toggle-off" class="fa-solid fa-toggle-off"></i>
+            <i id="toggle-on" class="fa-solid fa-toggle-on"></i>
+        </div>
     </header>
 
     <div class="row">
         <div class="column-1">
             <h2>Projects</h2>
-            <h3 id="oyc" onclick="addContentOyc()">Oslo Yacht Club</h3>
+            <h3 id="oslo-yacht"><i id="caret-1" class="fa-solid fa-caret-right"></i>Oslo Yacht Club</h3>
             <img id="slideshow-img" name="slide">
-            <p id="oyc-p">Home page of a fictional yacht club based in Oslo. Showcases HTML, CSS and a little bit of JavaScript</p>
-            <h3 id="obnoxious" onclick="addContentObnoxious()">Obnoxious:</h3>
+            <p id="oyc-p">Home page of a fictional yacht club based in Oslo.<br>Showcases HTML, CSS and a little bit of JavaScript</p>
+            <h3 id="obnoxious"><i id="caret-2" class="fa-solid fa-caret-right"></i>Obnoxious</h3>
             <img id="slideshow-img-2" name="slide2">
             <p id="obnoxious-p">Home page of a fictional tech company that designs and builds webpages. Showcases HTML and CSS.</p>
         </div>
-        <div class="column-2">
+        <div id="col-2" class="column-2">
             <h2>About Me</h2>
             <img src="./Pictures/me.jpg">
             <p>Hi! I'm Petter-Nikolai, a first year Front-end Development student at Noroff University College.<br><br>
@@ -62,4 +66,5 @@
     </footer>
 
 </body>
+<script src="javascript.js"></script>
 </html>

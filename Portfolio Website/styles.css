@@ -21,6 +21,36 @@ nav li {
     padding: 1rem;
 }
 
+.darkmode {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0 auto 0;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.darkmode p {
+    margin: 0;
+}
+
+.fa-toggle-off {
+    font-size: 1.5rem;
+}
+
+.fa-toggle-off:hover {
+    cursor: pointer;
+}
+
+.fa-toggle-on {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.fa-toggle-on:hover {
+    cursor: pointer;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -29,12 +59,20 @@ nav li {
 .column-1 {
     display: flex;
     flex-direction: column;
-    width: 700px;
+    width: 600px;
     margin-right: 2rem;
 }
 
 .column-1 h3 {
     text-align: left;
+}
+
+#oslo-yacht:hover {
+    cursor: pointer;
+}
+
+#obnoxious:hover {
+    cursor: pointer;
 }
 
 .column-1 img {
@@ -45,12 +83,17 @@ nav li {
 .column-1 p {
     display: none;
 }
+ 
+.fa-caret-right {
+    margin-right: 1rem;
+}
 
 .column-2 {
-    width: 300px;
+    width: 350px;
     text-align: center;
-    border-left: solid 1px;
-    padding-left: 2rem;
+    background-color: rgb(0, 0, 0, 0.9);
+    color: white;
+    padding: 0 1rem 1rem 1rem;
 }
 
 .column-2 p {
@@ -58,8 +101,9 @@ nav li {
 }
 
 .column-2 img {
-    max-width: 300px;
+    max-width: 350px;
     border-radius: 20px;
+    margin: 0;
 }
 
 .skills {
@@ -87,12 +131,16 @@ footer {
     bottom: 0;
 }
 
+.fa-heart {
+    color: red;
+}
+
 /* SLIDESHOW */
 
 #slideshow-img {
-    max-width: 700px;
+    max-width: 550px;
 }
 
 #slideshow-img-2 {
-    max-width: 700px;
+    max-width: 550px;
 }
