@@ -118,3 +118,12 @@ function normalMode() {
     document.getElementById("toggle-off").style.display = "block";
     document.getElementById("toggle-on").style.display = "none";
 }
+
+document.getElementById("menu").onclick = function() {
+    openMenu();
+}
+
+function openMenu() {
+    document.getElementById("navbar").style.display = "block";
+    document.getElementById("menu").style.display = "none";
+}
