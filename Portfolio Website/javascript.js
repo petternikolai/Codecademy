@@ -108,6 +108,10 @@ function darkMode() {
     document.getElementById("toggle-off").style.color = "white";
     document.getElementById("toggle-off").style.display = "none";
     document.getElementById("toggle-on").style.display = "block";
+    document.getElementById("a-about").style.color = "white";
+    document.getElementById("a-projects").style.color = "white";
+    document.getElementById("a-skills").style.color = "white";
+    document.getElementById("a-contact").style.color = "white";
 }
 
 function normalMode() {
@@ -117,6 +121,10 @@ function normalMode() {
     document.getElementById("toggle-off").style.color = "black";
     document.getElementById("toggle-off").style.display = "block";
     document.getElementById("toggle-on").style.display = "none";
+    document.getElementById("a-about").style.color = "black";
+    document.getElementById("a-projects").style.color = "black";
+    document.getElementById("a-skills").style.color = "black";
+    document.getElementById("a-contact").style.color = "black";
 }
 
 document.getElementById("menu").onclick = function() {

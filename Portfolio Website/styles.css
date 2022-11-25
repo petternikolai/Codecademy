@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
 body {
     max-width: 1000px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Black Han Sans', sans-serif;
+    /*letter-spacing: 1px;*/
     font-size: 16px;
     margin: 0 auto 0 auto;
 }
@@ -22,6 +25,16 @@ nav ul {
 
 nav li {
     padding: 1rem;
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    text-decoration: underline;
 }
 
 .darkmode {
@@ -126,12 +139,13 @@ nav li {
 
 .skills li {
     padding: 0 1rem 0 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 footer {
     display: flex;
     justify-content: center;
+    top: 100%;
     bottom: 0;
 }
 
@@ -147,4 +161,30 @@ footer {
 
 #slideshow-img-2 {
     max-width: 550px;
+}
+
+/* Contact Page */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 80vh;
+}
+
+.contact ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.contact li {
+    padding: 0 1rem 0 1rem;
+    font-size: 2.5rem;
+}
+
+#li-first {
+    padding: 0 1rem 0 0;
 }
