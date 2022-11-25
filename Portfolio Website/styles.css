@@ -1,16 +1,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0 auto 0 auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0 auto 0 auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    #navbar {
+        margin: 0;
+    }
+
+    nav ul {
+        padding-left: 0;
+    }
+
+    .darkmode {
+        background-color: rgba(255, 255, 255, 0.9);
+        margin-right: 1rem;
+        position: relative;
+        right: 0;
+        padding: 1rem;
+    }
+
+    #li-about {
+        padding-left: 0;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0 auto 0 auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .row {
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    #navbar {
+        margin: 0;
+    }
+
+    nav ul {
+        padding-left: 0;
+    }
+
+    .darkmode {
+        background-color: rgba(255, 255, 255, 0.9);
+        margin-right: 1rem;
+        position: relative;
+        right: 0;
+        padding: 1rem;
+    }
+
+    #li-about {
+        padding-left: 0;
+    }
+
+    .column-1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #col-2 {
+        margin-left: 0;
+        max-width: 425px;
+        width: 100%;
+    }
+}
+
 body {
     max-width: 1000px;
-    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Black Han Sans', sans-serif, Arial, Helvetica, sans-serif;
     /*letter-spacing: 1px;*/
     font-size: 16px;
     margin: 0 auto 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 header {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 nav {
@@ -19,7 +141,6 @@ nav {
 
 nav ul {
     display: flex;
-    flex-direction: row;
     list-style: none;
 }
 
@@ -76,7 +197,7 @@ li a:hover {
 .column-1 {
     display: flex;
     flex-direction: column;
-    width: 650px;
+    width: 70%;
 }
 
 .column-1 h3 {
@@ -105,12 +226,13 @@ li a:hover {
 }
 
 .column-2 {
-    width: 350px;
+    width: 30%;
     text-align: center;
     background-color: rgb(0, 0, 0, 0.9);
     color: white;
     padding: 0 1rem 1rem 1rem;
     border-radius: 20px;
+    margin-left: 2rem;
 }
 
 .column-2 p {
@@ -118,7 +240,9 @@ li a:hover {
 }
 
 .column-2 img {
-    max-width: 350px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
     border-radius: 20px;
     margin: 0;
 }
@@ -145,8 +269,9 @@ li a:hover {
 footer {
     display: flex;
     justify-content: center;
-    top: 100%;
+    position: relative;
     bottom: 0;
+    width: 100%;
 }
 
 .fa-heart {
@@ -157,10 +282,14 @@ footer {
 
 #slideshow-img {
     max-width: 550px;
+    width: 100%;
+    height: auto;
 }
 
 #slideshow-img-2 {
     max-width: 550px;
+    width: 100%;
+    height: auto;
 }
 
 /* Contact Page */

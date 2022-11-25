@@ -1,3 +1,5 @@
+/* Automatic Slideshow And Show Content When Clicking H3 */
+
 var i = 0;
 var images = [];
 var time = 3000;
@@ -93,6 +95,8 @@ function addContentObnoxious() {
     document.getElementById("caret-1").style.transform = "rotate(0deg)";
 }
 
+/* Dark Mode On/Off */
+
 document.getElementById("toggle-off").onclick = function() {
     darkMode();
 }
@@ -103,8 +107,9 @@ document.getElementById("toggle-on").onclick = function() {
 
 function darkMode() {
     document.getElementById("html").style.backgroundColor = "rgb(0, 0, 0, 0.9)";
-    document.getElementById("col-2").style.backgroundColor = "rgb(0, 0, 0, 0)";
     document.getElementById("html").style.color = "white";
+    document.getElementById("col-2").style.backgroundColor = "rgb(0,0,0,0)";
+    document.getElementById("darkmode").style.background = "rgb(0,0,0,0)"
     document.getElementById("toggle-off").style.color = "white";
     document.getElementById("toggle-off").style.display = "none";
     document.getElementById("toggle-on").style.display = "block";
@@ -112,12 +117,16 @@ function darkMode() {
     document.getElementById("a-projects").style.color = "white";
     document.getElementById("a-skills").style.color = "white";
     document.getElementById("a-contact").style.color = "white";
+    document.getElementById("linkedin").style.color = "white";
+    document.getElementById("github").style.color = "white";
+    document.getElementById("mail").style.color = "white";
 }
 
 function normalMode() {
     document.getElementById("html").style.backgroundColor = "white";
-    document.getElementById("col-2").style.backgroundColor = "rgb(0, 0, 0, 0.9)";
     document.getElementById("html").style.color = "black";
+    document.getElementById("col-2").style.backgroundColor = "rgb(0,0,0,0.9)";
+    document.getElementById("darkmode").style.background = "rgb(0,0,0,0)"
     document.getElementById("toggle-off").style.color = "black";
     document.getElementById("toggle-off").style.display = "block";
     document.getElementById("toggle-on").style.display = "none";
@@ -125,13 +134,21 @@ function normalMode() {
     document.getElementById("a-projects").style.color = "black";
     document.getElementById("a-skills").style.color = "black";
     document.getElementById("a-contact").style.color = "black";
+    document.getElementById("linkedin").style.color = "black";
+    document.getElementById("github").style.color = "black";
+    document.getElementById("mail").style.color = "black";
 }
 
-document.getElementById("menu").onclick = function() {
-    openMenu();
-}
+/* Change Picture Style */
+const picture = document.getElementById("picture");
+first_click;
 
-function openMenu() {
-    document.getElementById("navbar").style.display = "block";
-    document.getElementById("menu").style.display = "none";
+picture.onclick = function() {
+    if (first_click) {
+        picture.style.borderRadius = "50%";
+        first_click = false;
+    } else {
+        picture.style.borderRadius = "20px";
+        first_click = true;
+    };
 }
